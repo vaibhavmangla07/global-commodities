@@ -1,0 +1,13 @@
+name,group,current_price,today_high,today_low,date,time,price_change_pct,timestamp,source
+Gold,Precious Metal,4577.6001,4736.2998,4542.1001,2026-03-20,16:59:44,-0.5021,2026-03-20T16:49:00+00:00,Yahoo Finance API
+Silver,Precious Metal,69.725,74.25,68.5,2026-03-20,16:59:44,-1.6600,2026-03-20T16:49:00+00:00,Yahoo Finance API
+Platinum,Precious Metal,1965.1,2014.9,1923.7,2026-03-20,16:59:45,+1.3356,2026-03-20T16:49:00+00:00,Yahoo Finance API
+Palladium,Precious Metal,1445.0,1503.0,1401.0,2026-03-20,16:59:45,+0.7249,2026-03-20T16:49:00+00:00,Yahoo Finance API
+Copper,Base Metal,5.3735,5.553,5.3515,2026-03-20,16:59:46,-1.0952,2026-03-20T16:49:00+00:00,Yahoo Finance API
+Aluminum,Base Metal,3115.25,3210.5,3095.25,2026-03-20,16:59:46,-0.1442,2026-03-20T16:49:00+00:00,Yahoo Finance API
+Nickel,Base Metal,51695.0,53450.0,51640.0,2026-03-20,16:59:46,-2.7101,2026-03-20T16:49:00+00:00,Yahoo Finance API
+Crude Oil,Energy,97.69,97.72,93.29,2026-03-20,16:59:47,+1.6122,2026-03-20T16:49:00+00:00,Yahoo Finance API
+Brent Crude,Energy,105.51,106.41,102.01,2026-03-20,16:59:47,-2.8900,2026-03-20T16:49:00+00:00,Yahoo Finance API
+Natural Gas,Energy,3.07,3.169,3.045,2026-03-20,16:59:48,-3.0322,2026-03-20T16:49:00+00:00,Yahoo Finance API
+Rbob Gasoline,Energy,3.2027,3.203,3.0712,2026-03-20,16:59:48,+2.4176,2026-03-20T16:49:00+00:00,Yahoo Finance API
+Heating Oil,Energy,4.2129,4.2212,4.0141,2026-03-20,16:59:49,-2.9733,2026-03-20T16:49:00+00:00,Yahoo Finance API

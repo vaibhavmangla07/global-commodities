@@ -1,0 +1,8 @@
+pandas
+SQLAlchemy
+mysql-connector-python
+yfinance
+matplotlib
+seaborn
+jupyter
+ipykernel
