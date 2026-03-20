@@ -1,0 +1,18 @@
+How to run (Global Commodities Platform)
+
+1) Run extract only:
+cd "/Users/vmangla/Documents/Vaibhav/Programming/Python/global_commodities_platform" && set -a && source .env && set +a && /usr/local/bin/python3 etl/extract.py
+
+	Note: This automatically updates latest output in result/result.csv
+
+2) Run full pipeline (extract + transform + load):
+cd "/Users/vmangla/Documents/Vaibhav/Programming/Python/global_commodities_platform" && set -a && source .env && set +a && /usr/local/bin/python3 etl/extract.py && /usr/local/bin/python3 etl/transform.py && /usr/local/bin/python3 etl/load.py
+
+3) Run warehouse validation:
+cd "/Users/vmangla/Documents/Vaibhav/Programming/Python/global_commodities_platform" && set -a && source .env && set +a && /usr/local/bin/python3 etl/validate_warehouse.py
+
+4) Verify layer row counts (commodities_db):
+mysql -u root -p -D commodities_db -e "SELECT 'bronze' AS layer, COUNT(*) AS rows_count FROM bronze_commodity_prices UNION ALL SELECT 'silver', COUNT(*) FROM silver_commodity_prices UNION ALL SELECT 'gold_fact', COUNT(*) FROM fact_commodity_price;"
+
+5) View latest result CSV:
+cd "/Users/vmangla/Documents/Vaibhav/Programming/Python/global_commodities_platform" && head -n 20 result/result.csv
