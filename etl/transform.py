@@ -7,7 +7,6 @@ import pandas as pd
 BASE_DIR = Path(__file__).resolve().parents[1]
 BRONZE_DIR = BASE_DIR / "data" / "bronze"
 SILVER_DIR = BASE_DIR / "data" / "silver"
-SILVER_DIR.mkdir(parents=True, exist_ok=True)
 
 
 def latest_bronze_file() -> Path | None:

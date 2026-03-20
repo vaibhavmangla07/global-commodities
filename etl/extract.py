@@ -9,11 +9,19 @@ from commodities_list import ALL_COMMODITY_TICKERS, get_commodity_group
 
 
 BASE_DIR = Path(__file__).resolve().parents[1]
-BRONZE_DIR = BASE_DIR / "data" / "bronze"
-BRONZE_DIR.mkdir(parents=True, exist_ok=True)
+DATA_DIR = BASE_DIR / "data"
+BRONZE_DIR = DATA_DIR / "bronze"
+SILVER_DIR = DATA_DIR / "silver"
+GOLD_DIR = DATA_DIR / "gold"
 RESULT_DIR = BASE_DIR / "result"
-RESULT_DIR.mkdir(parents=True, exist_ok=True)
 TOP_COMMODITIES = ["Gold", "Silver", "Natural Gas", "Crude Oil"]
+
+
+def ensure_directories() -> None:
+    BRONZE_DIR.mkdir(parents=True, exist_ok=True)
+    SILVER_DIR.mkdir(parents=True, exist_ok=True)
+    GOLD_DIR.mkdir(parents=True, exist_ok=True)
+    RESULT_DIR.mkdir(parents=True, exist_ok=True)
 
 
 def pick_series(history: pd.DataFrame, field_name: str, ticker: str) -> pd.Series | None:
@@ -160,6 +168,7 @@ def save_result_csv(df: pd.DataFrame) -> Path:
 
 
 def run_once() -> None:
+    ensure_directories()
     df = extract_live_prices()
     if df.empty:
         print("No live records fetched from Yahoo Finance API. Please rerun.")

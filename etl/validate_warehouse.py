@@ -6,7 +6,7 @@ from sqlalchemy import create_engine
 
 DB_URL = os.getenv(
     "DB_URL",
-    "mysql+mysqlconnector://root:root@localhost:3306/global_commodities",
+    "mysql+mysqlconnector://root:root@localhost:3306/commodities_db",
 )
 
 
