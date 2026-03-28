@@ -1,0 +1,96 @@
+# Virtual Environment
+.venv/
+venv/
+env/
+ENV/
+*.egg-info/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+
+# Jupyter
+.ipynb_checkpoints/
+.jupyter/
+*.ipynb_checkpoints
+
+# Environment variables & secrets
+.env
+.env.local
+.env.*.local
+secrets.json
+credentials.json
+
+# Data (optional - comment out if you want to track some data)
+data/bronze/*.csv
+data/silver/*.csv
+data/gold/*.csv
+
+# Database
+*.db
+*.sqlite3
+*.sqlite
+
+# Logs
+*.log
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+temp/
+tmp/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE Configuration
+.editorconfig
+*.code-workspace
+
+# macOS specific
+.AppleDouble
+.LSOverride
+._*
+
+# Windows specific
+$RECYCLE.BIN/
+ehthumbs.db
+Desktop.ini
