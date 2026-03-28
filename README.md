@@ -98,8 +98,12 @@ Current groups and examples:
 ```text
 global_commodities_platform
 |__ PROJECT_OVERVIEW.md
+|__ PROJECT_REPORT.md
 |__ README.md
 |__ requirements.txt
+|__ .gitignore
+|__ .gitattributes
+|__ .env.example
 |__ data
 |   |__ bronze
 |   |   |__ example.txt
